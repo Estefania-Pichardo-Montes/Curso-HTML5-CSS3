@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Seccion 2</h1>
+	<h2>2.19 Etiqueta span</h2>
+	<p>
+		Mi madre tiene 
+		<span class="rojo" id="ojosAzules" style="color:red; font-size:20px">
+		ojos azules
+	</span>
+	</p>
+
+
+	<h2>2.20 Meter</h2>
+	<meter min="0" max="100" value="50"></meter>
+	<h3>Las temperaturas de las principales ciudades del perú</h3>
+	<p>
+	Lima: 
+	<meter min="0" max="50" value="15" high="40" low="10"
+	optimum="20">16° grados</meter>16° grados
+	</p>
+		<p>
+	Buenos aires: 
+	<meter min="0" max="50" value="45" high="40" low="10"
+	optimum="20">45° grados</meter>45° grados
+	</p>
+<h4>Actividad: Intenta convertir la expresion con meter</h4>
+	<p>
+		Desgaste de los frenos del auto.
+		<meter min="0" max="100" optimum="0" value="21"></meter> 
+		21% desgastada
+	</p>
+	<h2>Etiqueta progress</h2>
+	<p>
+		<progress max="100" value="50" id="barra"></progress><br>
+		<input type="button" name="Cargar" value="Cargar" onclick="setInterval('cargalo()',1000)">
+
+		<script>
+			function cargalo(){
+				var barra=Document.getDocumentById("barra");
+				barra.value+=5;
+			}
+		</script>
+
+	</p>
+</body>
+</html>
